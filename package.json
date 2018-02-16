@@ -1,0 +1,23 @@
+{
+    "name": "meepo-order-pipe",
+    "version": "1.1.0",
+    "repository": "https://github.com/meepobrother/meepo-common.git",
+    "author": "imeepos <1037483576@qq.com>",
+    "license": "MIT",
+    "private": false,
+    "scripts": {
+        "git": "git add . && git commit -m 'update' && git push origin master"
+    },
+    "peerDependencies": {
+        "@angular/core": "*",
+        "rxjs": "*"
+    },
+    "ngPackage": {
+        "$schema": "./node_modules/ng-packagr/ng-package.schema.json",
+        "dest": "../../../publish/order-pipe",
+        "workingDirectory": "./.ng_build",
+        "lib": {
+            "entryFile": "./public_api.ts"
+        }
+    }
+}
